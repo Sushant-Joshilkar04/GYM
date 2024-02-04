@@ -1,0 +1,108 @@
+
+
+body{
+    background-image: url(gym.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .items,h3{
+    color: aliceblue;
+    text-align: center;
+  }
+
+  .image{
+    border: 2px solid rgb(0, 0, 0);
+    background:url(gym.jfif) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .navbar ul li{
+    padding: 0px 5px;
+    margin: 0px 20px;
+  }
+
+  .navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+   
+  }
+
+  header {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  body{
+    font-size: 1.5rem;
+  }
+
+  .navbar
+  {
+    width : 90%;
+  display: flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+  }
+
+  .container{
+    margin: 60px 75px;
+    padding: 10px 20px;
+    width: 40%;
+    display: block;
+    background-color: #d1b798;;
+    border-radius: 40px;
+    text-align: center;
+  }
+    
+  .form-group input{
+          margin: 5px 5px;
+          padding: 5px 5px;
+          font-size: medium;
+          width: 50%;
+          border-radius: 10px;
+          text-align: center;
+  }
+
+ .btn{
+    margin: 5px 5px;
+    padding: 5px 5px;
+    font-size: medium;
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+ }
+
+
+/* sujal{
+    border: 2px solid rgb(74, 2, 241);
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    display: block;
+    margin: auto;
+    transition: all 1s ease-in-out .3s;
+  }
+
+ sujal:hover{
+    background-color: rgb(101, 151, 60);
+    animation-duration: 4s;
+    animation-timing-function: 2;
+    animation-delay: 2; 
+  } */ 
+
+
+
+
+
