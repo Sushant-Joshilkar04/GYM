@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1{
+            color: #d43838;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .frame {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33.33% - 40px);
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 200px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        /* footer */
+    .business-card {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .header, .contact, .footer {
+    flex: 1; 
+    margin: 0 10px; 
+  }
+  
+  .header img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 14px;
+  }
+  
+  .contact h2, .footer h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact p, .footer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .footer p {
+    margin: 5px;
+  }
+  
+  .footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .services{
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .footer a,.contact a,.services a{ 
+    text-decoration: none;
+    color: black;
+    
+  }
+
+  .services a .bar{ 
+    margin: 5px 5px;
+    
+  }
+
+  .header img{
+    border-radius: 50%;
+  }
+
+  img{
+    width: 100%;
+  }
+
+
+    </style>
+</head>
+<body>
+    <h1>Motivational Content</h1>
+
+    <div class="container">
+        <div class="frame">
+            <h2>Frame 1: Motivational Content</h2>
+            <iframe src="frame1.html">
+               
+            </iframe>
+        </div>
+
+        <div class="frame">
+            <h2>Frame 2: Motivational Quotes
+            </h2>
+            <iframe src="frame2.html">
+                
+            </iframe>
+        </div>
+           
+        <div class="frame">
+            <h2>Frame 3: Videos</h2>
+            <iframe src="frame3.html">
+                
+            </iframe>
+        </div>
+       
+    </div>
+
+    <footer>
+        <div class="business-card">
+            <div class="header">
+              <img src="gym logo.png" alt="Fitness Gym Logo">
+              <h1>FITNESS GYM</h1>
+              <p>Follow Us</p>
+            </div>
+            <div class="contact">
+            
+              <p>GPRA Quarters, Sector No. 26, Pradhikaran, Nigdi, Pimpri-Chinchwad, Maharashtra 411044</p><br>
+              <p><a href="tel:+912266787970">Phone: +9122 6678 7970</a></p>
+              <p><a href="mailto:info@FITNESSgym.com">Email: info@FITNESSgym.com</a></p>
+            </div>
+            <div class="services">
+              <h2>Services</h2>
+                <a href="Motivational_content.html"><div class="bar">MOTIVATIONAL CONTENT</div></a>
+                <a href="Membership.html"><div class="bar">MEMBERSHIP</div></a>
+                <a href="Personal_train.html"><div class="bar">PERSONAL TRAINING</div></a>
+                <a href="classes.html"><div class="bar">CLASSES</div></a>
+                <a href="nutrition.html"><div class="bar">NUTRITION</div></a>
+                <a href="carrers.html"><div class="bar">CAREERS</div></a>
+                <a href="feedback1.html"><div class="bar">FEEDBACK</div></a>
+            </div>
+            <div id="foot" class="footer">
+              <p><a href="https://maps.app.goo.gl/wgu92KwtfizpT9bV6">Location</a></p>
+              <p><a href="#">Terms & Conditions</a></p>
+              <p><a href="#">Membership Policy</a></p>
+            </div>
+          </div>
+    </footer>
+
+</body>
+</html>

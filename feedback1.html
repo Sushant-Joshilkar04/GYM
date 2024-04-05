@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        
+body {
+    font-family: sans-serif;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    background:url(Designer.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.box{
+    display: block;
+    border:2px solid black;
+    border-radius: 5%;
+    padding: 10px 20px;
+    width: 650px;
+    margin:auto;
+    background-color:#9ba7af;;
+    
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+}
+
+
+button[type="submit"]:hover {
+  background-color: #45a049; 
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>Your feedback</h1>
+    <h5>We would like your feedback to improve our Gym</h5><br>
+    <h2>What is your opinion of this Gym</h2>
+    <h4>Please your feedback from category below </h4>
+    <form action="" id="form">
+        <div class="feedback-categories">
+            
+            <input type="radio" id="suggestion" name="feedback-category" value="suggestion">
+            <label for="suggestion">Suggestion</label>
+            <input type="radio" id="not-right" name="feedback-category" value="not-right">
+            <label for="not-right">Something is not quite right</label> 
+            <input type="radio" id="compliment" name="feedback-category" value="compliment">
+            <label for="compliment">Compliment</label>
+           
+        </div>
+        <h5>Please leave your feedback below: </h5>
+        <div class="feedback-text">
+            <textarea id="feedback" name="feedback" rows="4" cols="65" >Write in brief: </textarea>
+        </div><br>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+
+<script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        
+        var feedbackCategory = document.querySelector('input[name="feedback-category"]:checked');
+        if (!feedbackCategory) {
+            alert("Please select a feedback category");
+            return;
+        }
+        feedbackCategory = feedbackCategory.value;
+
+        
+        var feedbackText = document.getElementById('feedback').value.trim();
+        if (feedbackText === "") {
+            alert("Please provide your feedback");
+            return;
+        }
+
+        
+        console.log("Feedback Category: " + feedbackCategory);
+        console.log("Feedback Text: " + feedbackText);
+
+     
+        event.target.reset();
+    });
+</script>
+
+
+
+</body>
+</html>
