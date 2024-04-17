@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="box">
+    <div class="image">logo</div>
+    <nav class="navbar">
+        <a href="Motivational_content.html"><div class="bar">MOTIVATIONAL CONTENT</div></a>
+        <a href="Membership.html"><div class="bar">MEMBERSHIP</div></a>
+        <a href="Personal_train.html"><div class="bar">PERSONAL TRAINING</div></a>
+        <a href="classes.html"><div class="bar">CLASSES</div></a>
+        <a href="nutrition.html"><div class="bar">NUTRITION</div></a>
+        <a href="carrers.html"><div class="bar">CAREERS</div></a>
+        <a href="https://maps.app.goo.gl/wgu92KwtfizpT9bV6"><div class="bar">LOCATION</div></a>
+        <a href="feedback1.html"><div class="bar">FEEDBACK</div></a>
+    </nav>
+
+        <img src="bg.jpg" alt="">
+
+</div>
+<div class="imgu">
+    <div class="info"><br><br><br><p>EXPERIENCE THE FITNESS WAVE<br>
+        AT Pune's Friendliest GYM IN PCMC!</p></div>
+        <div class="info2">JOIN FITNESS GYM TODAY</div>
+        <div class="formgym">
+            <form action="no.php" id="membership--form">
+                <input type="text" id="text" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="tel" id="tel" placeholder="Mobile">
+                <input type="tel" id="tel1" placeholder="Age">
+                <select name="options" id="gym" class="select-box">
+                    <option value="cone" selected>Choose One</option>
+                    <option value="ctwo">Free 1-Day Pass</option>
+                    <option value="cthree">Complementary Personal Training Session</option>
+                    <option value="cfour">Complementary Zumba Classes</option>
+                    <option value="cfive">Complementary Spin Class/ Indoor Cycling Class</option>
+                    <option value="csix">Complementary Power Yoga Class</option>
+                    <option value="cseven">Complementary Kickboxing Class</option>
+                </select>
+               
+            </form>
+            <button class="btn1" id="btn1">GET STARTED</button><br>
+            <div class="message" id="success-message">Thank you for joining us!</div>
+            
+        </div>
+
+        <div class="info"><p>#20YEARS OF SERVICE<br>
+            TO THE FITNESS & WELLNESS COMMUNITY<br>
+            #HEREFORYOU<br>
+            #HERETOSTAY<br>
+            #SAFESWEATSPACE</p></div>
+    </div>
+<br><br>
+    <div class="info3">
+        <div class="text">
+            <p>
+            YOUR BODY & YOUR FITNESS REQUIREMENTS ARE UNIQUE.<br> YOUR PERSONAL TRAINING SHOULD REFLECT THAT! <br><br>
+        <strong class="bold">CERTIFIED PERSONAL TRAINERS</strong> <br><br>
+        Get fit fast with Waves Gym’s <strong>certified personal trainers</strong>. Enjoy cardio,
+        <br> strength, and weight training with top equipment. <strong>Join now</strong> and make <br> ‘Impossible’ ‘I’m Possible’!</p><br><br>
+        </div>
+        
+        <div class="info3img"></div>
+      
+        
+    </div>
+
+    <div class="business-card">
+        <div class="header">
+          <img src="gym logo.png" alt="Fitness Gym Logo">
+          <h1>FITNESS GYM</h1>
+          <p>Follow Us</p>
+        </div>
+        <div class="contact">
+        
+          <p>GPRA Quarters, Sector No. 26, Pradhikaran, Nigdi, Pimpri-Chinchwad, Maharashtra 411044</p><br>
+          <p><a href="tel:+912266787970">Phone: +9122 6678 7970</a></p>
+          <p><a href="mailto:info@fitnesssgym.com">Email: info@wavesgym.com</a></p>
+        </div>
+        <div class="services">
+          <h2>Services</h2>
+            <a href="Motivational_content.html"><div class="bar">MOTIVATIONAL CONTENT</div></a>
+            <a href="Membership.html"><div class="bar">MEMBERSHIP</div></a>
+            <a href="Personal_train.html"><div class="bar">PERSONAL TRAINING</div></a>
+            <a href="classes.html"><div class="bar">CLASSES</div></a>
+            <a href="nutrition.html"><div class="bar">NUTRITION</div></a>
+            <a href="carrers.html"><div class="bar">CAREERS</div></a>
+            <a href="feedback1.html"><div class="bar">FEEDBACK</div></a>
+        </div>
+        <div id="foot" class="footer">
+          <p><a href="https://maps.app.goo.gl/wgu92KwtfizpT9bV6">Location</a></p>
+          <p><a href="#">Terms & Conditions</a></p>
+          <p><a href="#">Membership Policy</a></p>
+        </div>
+      </div>
+
+
+    <script>
+        // Function to handle form submission
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            
+            // Get form elements
+            const nameInput = document.getElementById('text');
+            const emailInput = document.getElementById('email');
+            const mobileInput = document.getElementById('tel');
+            const ageInput = document.getElementById('tel1');
+            const gymSelect = document.getElementById('gym');
+            
+           
+            if (nameInput.value === '' || emailInput.value === '' || ageInput.value === '' || gymSelect.value === 'cone') {
+                alert('Please fill out all fields and select an option from the dropdown.');
+                return;
+            }
+
+            
+            const mobileNumber = mobileInput.value.trim();
+            if (!mobileNumber.startsWith('+91') || mobileNumber.length !== 13 || isNaN(mobileNumber.slice(3))) {
+                alert('Please enter a valid mobile number starting with "+91" and containing 10 digits.');
+                return;
+            }
+
+            
+            console.log('Form submitted:');
+            console.log('Name:', nameInput.value);
+            console.log('Email:', emailInput.value);
+            console.log('Mobile:', mobileNumber);
+            console.log('Age:', ageInput.value);
+            console.log('Selected option:', gymSelect.value);
+            
+            
+            event.target.reset();
+        }
+
+        
+
+        document.getElementById("membership-form").addEventListener("btn1", function (event) {
+        event.preventDefault();
+        document.getElementById("membership-form").style.display = "none";
+        document.getElementById("success-message").classList.add("show-message");
+    });
+        
+    </script>
+</body>
+</html>
+
+       
+
+</body>
+</html>
